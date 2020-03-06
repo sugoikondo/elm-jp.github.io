@@ -11,11 +11,10 @@ import Html.Attributes exposing (class, href, id, rel, src, target)
 view : List (Html msg)
 view =
     [ siteHeader
-    , main_ []
+    , main_ [ id "top" ]
         [ section [ class "section" ]
             [ div [ class "content" ]
-                [ img [ src "img/sakura.jpg" ] []
-                , p [] [ text "Elm-jp は日本を活動拠点とする、動物を愛でるようなやさしい気持ちを大切にするElmユーザーの集まりです。" ]
+                [ p [] [ text "Elm-jp は日本を活動拠点とする、動物を愛でるようなやさしい気持ちを大切にするElmユーザーの集まりです。" ]
                 , p []
                     [ a [ class "button", target "_blank", rel "noopener", href "https://discordapp.com/invite/4j2MxCg" ]
                         [ text "Discord 招待リンク" ]
@@ -31,12 +30,6 @@ view =
                     ]
                 ]
             ]
-        , section [ id "sakura", class "section" ]
-            [ div [ class "moment" ]
-                [ a [ class "twitter-moment", href "https://twitter.com/i/moments/1088056396665352192?ref_src=twsrc%5Etfw" ]
-                    [ text "さくらちゃん日記" ]
-                ]
-            ]
         ]
     , siteFooter
     ]
@@ -44,14 +37,20 @@ view =
 
 siteHeader : Html msg
 siteHeader =
-    header [ class "navbar is-spaced is-light" ]
-        [ h1 [ class "navbar-brand" ]
-            [ a [ class "navbar-item", href "/" ]
-                [ span [ class "has-text-weight-bold" ] [ text "Elm-jp" ]
+    header [ class "navbar is-spaced" ]
+        [ div
+            [ class "container" ]
+            [ h1 [ class "navbar-brand" ]
+                [ a [ class "navbar-item", href "/" ]
+                    [ img [ src "img/logo.jpg" ] []
+                    ]
                 ]
-            ]
-        , nav [ class "navbar-menu navbar-end" ]
-            [ a [ class "navbar-item", href "#sakura" ] [ text "さくらちゃん日記" ]
+            , nav [ class "navbar-menu navbar-end" ]
+                [ a [ class "navbar-item color-blue", href "#sakura" ] [ text "ドキュメント" ]
+                , a [ class "navbar-item color-green", href "#sakura" ] [ text "Elmの特徴" ]
+                , a [ class "navbar-item color-yellow", href "#sakura" ] [ text "採用事例" ]
+                , a [ class "navbar-item color-green", href "#sakura" ] [ text "参考資料" ]
+                ]
             ]
         ]
 
@@ -59,7 +58,7 @@ siteHeader =
 siteFooter : Html msg
 siteFooter =
     footer [ class "footer" ]
-        [ div [ class "has-text-centered" ]
+        [ div [ class "has-text-centered container" ]
             [ p [] [ text "© 2019 Elm-jp" ]
             ]
         ]
