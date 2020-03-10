@@ -37,19 +37,19 @@ view =
 
 siteHeader : Html msg
 siteHeader =
-    header [ class "navbar is-spaced" ]
+    header [ class "navbar" ]
         [ div
             [ class "container" ]
             [ h1 [ class "navbar__logo" ]
-                [ a [ class "navbar-item", href "/" ]
+                [ a [ href "/" ]
                     [ img [ src "img/logo.jpg" ] []
                     ]
                 ]
-            , nav [ class "navbar-menu navbar-end" ]
-                [ a [ class "navbar-item color-blue", href "#sakura" ] [ text "ドキュメント" ]
-                , a [ class "navbar-item color-green", href "#sakura" ] [ text "Elmの特徴" ]
-                , a [ class "navbar-item color-yellow", href "#sakura" ] [ text "採用事例" ]
-                , a [ class "navbar-item color-green", href "#sakura" ] [ text "参考資料" ]
+            , nav [ class "navbar__menu" ]
+                [ a [ class "menu__link color-blue", href "#sakura" ] [ text "ドキュメント" ]
+                , a [ class "menu__link color-green", href "#sakura" ] [ text "Elmの特徴" ]
+                , a [ class "menu__link color-yellow", href "#sakura" ] [ text "採用事例" ]
+                , a [ class "menu__link color-green", href "#sakura" ] [ text "参考資料" ]
                 ]
             ]
         ]

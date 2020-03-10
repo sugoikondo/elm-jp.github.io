@@ -10542,7 +10542,7 @@ var $author$project$Page$Top$siteHeader = A2(
 	$elm$html$Html$header,
 	_List_fromArray(
 		[
-			$elm$html$Html$Attributes$class('navbar is-spaced')
+			$elm$html$Html$Attributes$class('navbar')
 		]),
 	_List_fromArray(
 		[
@@ -10566,7 +10566,6 @@ var $author$project$Page$Top$siteHeader = A2(
 							$elm$html$Html$a,
 							_List_fromArray(
 								[
-									$elm$html$Html$Attributes$class('navbar-item'),
 									$elm$html$Html$Attributes$href('/')
 								]),
 							_List_fromArray(
@@ -10584,7 +10583,7 @@ var $author$project$Page$Top$siteHeader = A2(
 					$elm$html$Html$nav,
 					_List_fromArray(
 						[
-							$elm$html$Html$Attributes$class('navbar-menu navbar-end')
+							$elm$html$Html$Attributes$class('navbar__menu')
 						]),
 					_List_fromArray(
 						[
@@ -10592,7 +10591,7 @@ var $author$project$Page$Top$siteHeader = A2(
 							$elm$html$Html$a,
 							_List_fromArray(
 								[
-									$elm$html$Html$Attributes$class('navbar-item color-blue'),
+									$elm$html$Html$Attributes$class('menu__link color-blue'),
 									$elm$html$Html$Attributes$href('#sakura')
 								]),
 							_List_fromArray(
@@ -10603,7 +10602,7 @@ var $author$project$Page$Top$siteHeader = A2(
 							$elm$html$Html$a,
 							_List_fromArray(
 								[
-									$elm$html$Html$Attributes$class('navbar-item color-green'),
+									$elm$html$Html$Attributes$class('menu__link color-green'),
 									$elm$html$Html$Attributes$href('#sakura')
 								]),
 							_List_fromArray(
@@ -10614,7 +10613,7 @@ var $author$project$Page$Top$siteHeader = A2(
 							$elm$html$Html$a,
 							_List_fromArray(
 								[
-									$elm$html$Html$Attributes$class('navbar-item color-yellow'),
+									$elm$html$Html$Attributes$class('menu__link color-yellow'),
 									$elm$html$Html$Attributes$href('#sakura')
 								]),
 							_List_fromArray(
@@ -10625,7 +10624,7 @@ var $author$project$Page$Top$siteHeader = A2(
 							$elm$html$Html$a,
 							_List_fromArray(
 								[
-									$elm$html$Html$Attributes$class('navbar-item color-green'),
+									$elm$html$Html$Attributes$class('menu__link color-green'),
 									$elm$html$Html$Attributes$href('#sakura')
 								]),
 							_List_fromArray(
