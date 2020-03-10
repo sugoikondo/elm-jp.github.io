@@ -10521,17 +10521,11 @@ var $author$project$Page$Top$siteFooter = A2(
 			$elm$html$Html$div,
 			_List_fromArray(
 				[
-					$elm$html$Html$Attributes$class('has-text-centered container')
+					$elm$html$Html$Attributes$class('container')
 				]),
 			_List_fromArray(
 				[
-					A2(
-					$elm$html$Html$p,
-					_List_Nil,
-					_List_fromArray(
-						[
-							$elm$html$Html$text('© 2019 Elm-jp')
-						]))
+					$elm$html$Html$text('© 2019 Elm-jp')
 				]))
 		]));
 var $elm$html$Html$h1 = _VirtualDom_node('h1');
@@ -10564,7 +10558,7 @@ var $author$project$Page$Top$siteHeader = A2(
 					$elm$html$Html$h1,
 					_List_fromArray(
 						[
-							$elm$html$Html$Attributes$class('navbar-brand')
+							$elm$html$Html$Attributes$class('navbar__logo')
 						]),
 					_List_fromArray(
 						[

@@ -40,7 +40,7 @@ siteHeader =
     header [ class "navbar is-spaced" ]
         [ div
             [ class "container" ]
-            [ h1 [ class "navbar-brand" ]
+            [ h1 [ class "navbar__logo" ]
                 [ a [ class "navbar-item", href "/" ]
                     [ img [ src "img/logo.jpg" ] []
                     ]
@@ -58,7 +58,7 @@ siteHeader =
 siteFooter : Html msg
 siteFooter =
     footer [ class "footer" ]
-        [ div [ class "has-text-centered container" ]
-            [ p [] [ text "© 2019 Elm-jp" ]
+        [ div [ class "container" ]
+            [ text "© 2019 Elm-jp"
             ]
         ]

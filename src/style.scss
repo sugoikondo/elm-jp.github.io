@@ -1,18 +1,48 @@
-.moment {
-  max-width: 30em;
-}
+@import "styles/sanitize.css";
 
-// Import Bulma
-@import "../node_modules/bulma/bulma.sass";
+@import "styles/variables.scss";
+@import "styles/page/index.scss";
 
-// Styles for top page
+
+
+// Global styles
 footer {
   background-color: #7A7D8E !important;
   color: white !important;
-  padding: 10px !important;
+  
+  & > .container {
+    justify-content: center;
+  }
+}
+
+.container {
+  display: flex;
+  align-items: stretch;
+  width: 100%;
+  padding: 12px;
+  box-sizing: border-box;
+  margin: 0 auto;
+  position: relative;
+  flex-grow: 1;  
+  
+  @media screen and (min-width: $desktop) {
+    max-width: calc(#{$desktop} - 64px);
+  }
+  @media screen and (min-width: $widescreen) {
+    max-width: calc(#{$widescreen} - 64px);
+  }
+  @media screen and (min-width: $fullhd) {
+    max-width: calc(#{$fullhd} - 64px);
+  }
 }
 
 header {
+  min-height: 2.5rem;
+
+  .logo {
+
+  }
+  
   nav {
     .navbar-item {
       padding: 4px 16px 4px 12px !important;
