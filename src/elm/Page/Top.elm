@@ -1,7 +1,9 @@
 module Page.Top exposing (view)
 
+import Color exposing (Color)
 import Html exposing (Html, a, div, footer, h1, header, img, main_, nav, p, section, span, text)
 import Html.Attributes exposing (class, href, id, rel, src, target)
+import Material.Icons.Action exposing (open_in_new)
 
 
 
@@ -35,6 +37,16 @@ view =
     ]
 
 
+colorText : Color
+colorText =
+    Color.rgb255 88 86 86
+
+
+colorIconDefault : Color
+colorIconDefault =
+    Color.rgb255 163 163 163
+
+
 siteHeader : Html msg
 siteHeader =
     header [ class "navbar" ]
@@ -46,7 +58,10 @@ siteHeader =
                     ]
                 ]
             , nav [ class "navbar__menu" ]
-                [ a [ class "menu__link color-blue", href "#sakura" ] [ text "ドキュメント" ]
+                [ a [ class "menu__link color-blue", href "#sakura" ]
+                    [ text "ドキュメント"
+                    , open_in_new colorIconDefault 16
+                    ]
                 , a [ class "menu__link color-green", href "#sakura" ] [ text "Elmの特徴" ]
                 , a [ class "menu__link color-yellow", href "#sakura" ] [ text "採用事例" ]
                 , a [ class "menu__link color-green", href "#sakura" ] [ text "参考資料" ]

@@ -1,1 +1,1 @@
-const app = Elm.Main.init();
+const app = Elm.Main.init()
