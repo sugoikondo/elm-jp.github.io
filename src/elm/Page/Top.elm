@@ -1,7 +1,7 @@
 module Page.Top exposing (view)
 
 import Color exposing (Color)
-import Html exposing (Html, a, div, footer, h1, header, img, main_, nav, p, section, span, text)
+import Html exposing (Html, a, button, div, footer, h1, h2, header, img, main_, nav, p, section, span, text)
 import Html.Attributes exposing (class, href, id, rel, src, target)
 import Material.Icons.Action exposing (open_in_new)
 
@@ -15,20 +15,27 @@ view =
     [ siteHeader
     , main_ [ id "top" ]
         [ section [ class "section" ]
-            [ div [ class "content" ]
-                [ p [] [ text "Elm-jp は日本を活動拠点とする、動物を愛でるようなやさしい気持ちを大切にするElmユーザーの集まりです。" ]
-                , p []
-                    [ a [ class "button", target "_blank", rel "noopener", href "https://discordapp.com/invite/4j2MxCg" ]
-                        [ text "Discord 招待リンク" ]
+            [ div [ class "container fv" ]
+                [ div [ class "fv__left" ]
+                    [ div [ class "" ]
+                        [ h1 [ class "fv__h1" ] [ text "Elm-jp Group" ]
+                        , h2 [ class "fv__h2" ] [ text "日本のElmユーザーグループ" ]
+                        , div [ class "fv__links" ]
+                            [ button [ class "links__button" ]
+                                [ a [ target "_blank", rel "noopener", href "https://discordapp.com/invite/4j2MxCg" ]
+                                    [ img [ src "img/icon-discord.svg" ] [], text "Discord" ]
+                                ]
+                            , button [ class "links__button bordered" ]
+                                [ a
+                                    [ target "_blank", rel "noopener", href "https://guide.elm-lang.jp/" ]
+                                    [ text "ドキュメント", open_in_new colorMain 18 ]
+                                ]
+                            ]
+                        ]
                     ]
-                , p []
-                    [ a
-                        [ class "button", target "_blank", rel "noopener", href "https://scrapbox.io/elm-jp" ]
-                        [ text "ScrapBox" ]
-                    ]
-                , p []
-                    [ a [ class "button", target "_blank", rel "noopener", href "https://guide.elm-lang.jp" ]
-                        [ text "公式ドキュメント翻訳プロジェクト" ]
+                , div
+                    [ class "fv__right" ]
+                    [ img [ src "img/elm-jp.svg" ] []
                     ]
                 ]
             ]
@@ -40,6 +47,11 @@ view =
 colorText : Color
 colorText =
     Color.rgb255 88 86 86
+
+
+colorMain : Color
+colorMain =
+    Color.rgb255 72 199 116
 
 
 colorIconDefault : Color

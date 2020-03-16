@@ -1,6 +1,6 @@
 @import "styles/sanitize.css";
-
 @import "styles/variables.scss";
+
 @import "styles/page/index.scss";
 
 // layout utilities
@@ -19,19 +19,17 @@
   @media screen and (min-width: $widescreen) {
     max-width: calc(#{$widescreen} - 64px);
   }
-  @media screen and (min-width: $fullhd) {
-    max-width: calc(#{$fullhd} - 64px);
-  }
 }
 
 
 // Global styles
 html {
   font-size: 16px;
+  color: $color-text;
 }
 header {
   $header-height: 40px;
-  padding: 12px 0;
+  padding: 12px 32px;
   line-height: $header-height;
 
   .navbar__logo {
@@ -74,9 +72,16 @@ header {
     }
   }
 }
+
+main {
+  padding: 0 32px;
+  box-sizing: border-box;
+  width: 100vw;
+}
 footer {
   background-color: #7A7D8E !important;
   color: white !important;
+  padding: 12px 0;
   
   & > .container {
     justify-content: center;

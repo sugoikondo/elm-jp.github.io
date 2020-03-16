@@ -10505,29 +10505,6 @@ var $author$project$Main$update = F2(
 	function (msg, model) {
 		return _Utils_Tuple2(model, $elm$core$Platform$Cmd$none);
 	});
-var $elm$html$Html$main_ = _VirtualDom_node('main');
-var $elm$html$Html$Attributes$rel = _VirtualDom_attribute('rel');
-var $elm$html$Html$section = _VirtualDom_node('section');
-var $elm$html$Html$footer = _VirtualDom_node('footer');
-var $author$project$Page$Top$siteFooter = A2(
-	$elm$html$Html$footer,
-	_List_fromArray(
-		[
-			$elm$html$Html$Attributes$class('footer')
-		]),
-	_List_fromArray(
-		[
-			A2(
-			$elm$html$Html$div,
-			_List_fromArray(
-				[
-					$elm$html$Html$Attributes$class('container')
-				]),
-			_List_fromArray(
-				[
-					$elm$html$Html$text('© 2019 Elm-jp')
-				]))
-		]));
 var $avh4$elm_color$Color$RgbaSpace = F4(
 	function (a, b, c, d) {
 		return {$: 'RgbaSpace', a: a, b: b, c: c, d: d};
@@ -10544,11 +10521,11 @@ var $avh4$elm_color$Color$rgb255 = F3(
 			$avh4$elm_color$Color$scaleFrom255(b),
 			1.0);
 	});
-var $author$project$Page$Top$colorIconDefault = A3($avh4$elm_color$Color$rgb255, 163, 163, 163);
+var $author$project$Page$Top$colorMain = A3($avh4$elm_color$Color$rgb255, 72, 199, 116);
 var $elm$html$Html$h1 = _VirtualDom_node('h1');
-var $elm$html$Html$header = _VirtualDom_node('header');
+var $elm$html$Html$h2 = _VirtualDom_node('h2');
 var $elm$html$Html$img = _VirtualDom_node('img');
-var $elm$html$Html$nav = _VirtualDom_node('nav');
+var $elm$html$Html$main_ = _VirtualDom_node('main');
 var $elm$svg$Svg$Attributes$d = _VirtualDom_attribute('d');
 var $elm$svg$Svg$Attributes$fill = _VirtualDom_attribute('fill');
 var $elm$svg$Svg$trustedNode = _VirtualDom_nodeNS('http://www.w3.org/2000/svg');
@@ -10613,6 +10590,31 @@ var $danmarcab$material_icons$Material$Icons$Action$open_in_new = A2(
 				]),
 			_List_Nil)
 		]));
+var $elm$html$Html$Attributes$rel = _VirtualDom_attribute('rel');
+var $elm$html$Html$section = _VirtualDom_node('section');
+var $elm$html$Html$footer = _VirtualDom_node('footer');
+var $author$project$Page$Top$siteFooter = A2(
+	$elm$html$Html$footer,
+	_List_fromArray(
+		[
+			$elm$html$Html$Attributes$class('footer')
+		]),
+	_List_fromArray(
+		[
+			A2(
+			$elm$html$Html$div,
+			_List_fromArray(
+				[
+					$elm$html$Html$Attributes$class('container')
+				]),
+			_List_fromArray(
+				[
+					$elm$html$Html$text('© 2019 Elm-jp')
+				]))
+		]));
+var $author$project$Page$Top$colorIconDefault = A3($avh4$elm_color$Color$rgb255, 163, 163, 163);
+var $elm$html$Html$header = _VirtualDom_node('header');
+var $elm$html$Html$nav = _VirtualDom_node('nav');
 var $elm$html$Html$Attributes$src = function (url) {
 	return A2(
 		$elm$html$Html$Attributes$stringProperty,
@@ -10740,73 +10742,122 @@ var $author$project$Page$Top$view = _List_fromArray(
 						$elm$html$Html$div,
 						_List_fromArray(
 							[
-								$elm$html$Html$Attributes$class('content')
+								$elm$html$Html$Attributes$class('container fv')
 							]),
 						_List_fromArray(
 							[
 								A2(
-								$elm$html$Html$p,
-								_List_Nil,
+								$elm$html$Html$div,
 								_List_fromArray(
 									[
-										$elm$html$Html$text('Elm-jp は日本を活動拠点とする、動物を愛でるようなやさしい気持ちを大切にするElmユーザーの集まりです。')
-									])),
-								A2(
-								$elm$html$Html$p,
-								_List_Nil,
+										$elm$html$Html$Attributes$class('fv__left')
+									]),
 								_List_fromArray(
 									[
 										A2(
-										$elm$html$Html$a,
+										$elm$html$Html$div,
 										_List_fromArray(
 											[
-												$elm$html$Html$Attributes$class('button'),
-												$elm$html$Html$Attributes$target('_blank'),
-												$elm$html$Html$Attributes$rel('noopener'),
-												$elm$html$Html$Attributes$href('https://discordapp.com/invite/4j2MxCg')
+												$elm$html$Html$Attributes$class('')
 											]),
 										_List_fromArray(
 											[
-												$elm$html$Html$text('Discord 招待リンク')
+												A2(
+												$elm$html$Html$h1,
+												_List_fromArray(
+													[
+														$elm$html$Html$Attributes$class('fv__h1')
+													]),
+												_List_fromArray(
+													[
+														$elm$html$Html$text('Elm-jp Group')
+													])),
+												A2(
+												$elm$html$Html$h2,
+												_List_fromArray(
+													[
+														$elm$html$Html$Attributes$class('fv__h2')
+													]),
+												_List_fromArray(
+													[
+														$elm$html$Html$text('日本のElmユーザーグループ')
+													])),
+												A2(
+												$elm$html$Html$div,
+												_List_fromArray(
+													[
+														$elm$html$Html$Attributes$class('fv__links')
+													]),
+												_List_fromArray(
+													[
+														A2(
+														$elm$html$Html$button,
+														_List_fromArray(
+															[
+																$elm$html$Html$Attributes$class('links__button')
+															]),
+														_List_fromArray(
+															[
+																A2(
+																$elm$html$Html$a,
+																_List_fromArray(
+																	[
+																		$elm$html$Html$Attributes$target('_blank'),
+																		$elm$html$Html$Attributes$rel('noopener'),
+																		$elm$html$Html$Attributes$href('https://discordapp.com/invite/4j2MxCg')
+																	]),
+																_List_fromArray(
+																	[
+																		A2(
+																		$elm$html$Html$img,
+																		_List_fromArray(
+																			[
+																				$elm$html$Html$Attributes$src('img/icon-discord.svg')
+																			]),
+																		_List_Nil),
+																		$elm$html$Html$text('Discord')
+																	]))
+															])),
+														A2(
+														$elm$html$Html$button,
+														_List_fromArray(
+															[
+																$elm$html$Html$Attributes$class('links__button bordered')
+															]),
+														_List_fromArray(
+															[
+																A2(
+																$elm$html$Html$a,
+																_List_fromArray(
+																	[
+																		$elm$html$Html$Attributes$target('_blank'),
+																		$elm$html$Html$Attributes$rel('noopener'),
+																		$elm$html$Html$Attributes$href('https://guide.elm-lang.jp/')
+																	]),
+																_List_fromArray(
+																	[
+																		$elm$html$Html$text('ドキュメント'),
+																		A2($danmarcab$material_icons$Material$Icons$Action$open_in_new, $author$project$Page$Top$colorMain, 18)
+																	]))
+															]))
+													]))
 											]))
 									])),
 								A2(
-								$elm$html$Html$p,
-								_List_Nil,
+								$elm$html$Html$div,
+								_List_fromArray(
+									[
+										$elm$html$Html$Attributes$class('fv__right')
+									]),
 								_List_fromArray(
 									[
 										A2(
-										$elm$html$Html$a,
+										$elm$html$Html$img,
 										_List_fromArray(
 											[
-												$elm$html$Html$Attributes$class('button'),
-												$elm$html$Html$Attributes$target('_blank'),
-												$elm$html$Html$Attributes$rel('noopener'),
-												$elm$html$Html$Attributes$href('https://scrapbox.io/elm-jp')
+												$elm$html$Html$Attributes$src('img/elm-jp.svg')
 											]),
-										_List_fromArray(
-											[
-												$elm$html$Html$text('ScrapBox')
-											]))
-									])),
-								A2(
-								$elm$html$Html$p,
-								_List_Nil,
-								_List_fromArray(
-									[
-										A2(
-										$elm$html$Html$a,
-										_List_fromArray(
-											[
-												$elm$html$Html$Attributes$class('button'),
-												$elm$html$Html$Attributes$target('_blank'),
-												$elm$html$Html$Attributes$rel('noopener'),
-												$elm$html$Html$Attributes$href('https://guide.elm-lang.jp')
-											]),
-										_List_fromArray(
-											[
-												$elm$html$Html$text('公式ドキュメント翻訳プロジェクト')
-											]))
+										_List_Nil)
 									]))
 							]))
 					]))
