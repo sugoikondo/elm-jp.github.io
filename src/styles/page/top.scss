@@ -1,4 +1,4 @@
-
+@import "../variables.scss";
 
 #top {
   .fv {
@@ -50,7 +50,7 @@
           }
           img, svg {
             height: 1.5em;
-            padding: 0 .1em;
+            padding: .1em 0;
             vertical-align: middle;
             line-height: 32px;
           }
@@ -62,5 +62,11 @@
         }
       }
     }
+  }
+  .link-portal {
+    background-color: $color-background-grey;
+    padding: 24px 0;
+    border-top: 1px solid $color-border;
+    text-align: center;
   }
 }

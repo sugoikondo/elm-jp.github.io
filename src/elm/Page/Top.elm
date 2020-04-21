@@ -1,7 +1,7 @@
 module Page.Top exposing (view)
 
 import Color exposing (Color)
-import Html exposing (Html, a, button, div, footer, h1, h2, header, img, main_, nav, p, section, span, text)
+import Html exposing (Html, a, button, div, footer, h1, h2, h3, header, img, main_, nav, p, section, span, text)
 import Html.Attributes exposing (class, href, id, rel, src, target)
 import Material.Icons.Action exposing (open_in_new)
 
@@ -38,6 +38,9 @@ view =
                     [ img [ src "img/elm-jp.svg" ] []
                     ]
                 ]
+            ]
+        , section [ class "link-portal" ]
+            [ h3 [ class "header" ] [ text "LINKS" ]
             ]
         ]
     , siteFooter
@@ -89,3 +92,8 @@ siteFooter =
             [ text "© 2019 Elm-jp"
             ]
         ]
+
+
+viewH3Header : Html msg
+viewH3Header =
+    h3 [] []

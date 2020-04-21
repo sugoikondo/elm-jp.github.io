@@ -2,6 +2,7 @@
 @import "styles/variables.scss";
 
 @import "styles/page/index.scss";
+@import "styles/global/index.scss";
 
 // layout utilities
 .container {
@@ -74,7 +75,6 @@ header {
 }
 
 main {
-  padding: 0 32px;
   box-sizing: border-box;
   width: 100vw;
 }

@@ -1,0 +1,18 @@
+@import "../variables.scss";
+
+
+h3.header {
+  font-size: 14px;
+  font-weight: borld;
+  margin: 12px auto;
+
+  &::after {
+    content: "";
+    display: block;
+    margin: 2px auto 0;
+    width: 26px;
+    height: 2px;
+    background: linear-gradient(to right, $color-sub-yellow, $color-sub-yellow 13px, $color-sub-green 13px, $color-sub-green 20px, $color-main 20px, $color-main 26px);
+    border-radius: 4px;
+  }
+}
